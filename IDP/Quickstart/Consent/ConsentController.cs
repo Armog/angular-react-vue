@@ -20,7 +20,7 @@ namespace IDP
     /// </summary>
     [SecurityHeaders]
     [Authorize]
-    public class ConsentController : Controller
+    public class ConsentController : Microsoft.AspNetCore.Mvc.Controller
     {
         private readonly IIdentityServerInteractionService _interaction;
         private readonly IClientStore _clientStore;

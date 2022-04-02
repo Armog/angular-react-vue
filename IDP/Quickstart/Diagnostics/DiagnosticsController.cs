@@ -12,7 +12,7 @@ namespace IDP
 {
     [SecurityHeaders]
     [Authorize]
-    public class DiagnosticsController : Controller
+    public class DiagnosticsController : Microsoft.AspNetCore.Mvc.Controller
     {
         public async Task<IActionResult> Index()
         {

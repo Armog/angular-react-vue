@@ -27,7 +27,7 @@ namespace IDP
     /// </summary>
     [SecurityHeaders]
     [AllowAnonymous]
-    public class AccountController : Controller
+    public class AccountController : Microsoft.AspNetCore.Mvc.Controller
     {
         private readonly TestUserStore _users;
         private readonly IIdentityServerInteractionService _interaction;

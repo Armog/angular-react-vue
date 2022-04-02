@@ -18,7 +18,7 @@ namespace IDP.Device
 {
     [Authorize]
     [SecurityHeaders]
-    public class DeviceController : Controller
+    public class DeviceController : Microsoft.AspNetCore.Mvc.Controller
     {
         private readonly IDeviceFlowInteractionService _interaction;
         private readonly IClientStore _clientStore;

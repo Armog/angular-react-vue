@@ -19,7 +19,7 @@ namespace IDP
     /// </summary>
     [SecurityHeaders]
     [Authorize]
-    public class GrantsController : Controller
+    public class GrantsController : Microsoft.AspNetCore.Mvc.Controller
     {
         private readonly IIdentityServerInteractionService _interaction;
         private readonly IClientStore _clients;

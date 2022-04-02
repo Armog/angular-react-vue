@@ -30,14 +30,14 @@ import { MovieDetailsComponent } from './movie-details/movie-details.component';
     HttpClientModule,
     FormsModule,
     RouterModule.forRoot([
-      { path: '', component: HomeComponent, pathMatch: 'full' },
-      //{ path: 'home', component: HomeComponent },
-      { path: 'oidc-callback', component: OidcCallbackComponent },
-      { path: 'movies', component: MoviesComponent },
-      { path: 'movie-details/:id', component: MovieDetailsComponent, canActivate: [AuthGuard] },
-      { path: 'identity', component: IdentityComponent, canActivate: [AuthGuard] },
-      //{ path: '**', component: NotFoundComponent }
-    ])
+    { path: '', component: HomeComponent, pathMatch: 'full' },
+    //{ path: 'home', component: HomeComponent },
+    { path: 'oidc-callback', component: OidcCallbackComponent },
+    { path: 'movies', component: MoviesComponent },
+    { path: 'movie-details/:id', component: MovieDetailsComponent, canActivate: [AuthGuard] },
+    { path: 'identity', component: IdentityComponent, canActivate: [AuthGuard] },
+    //{ path: '**', component: NotFoundComponent }
+], { relativeLinkResolution: 'legacy' })
   ],
   providers: [
     {

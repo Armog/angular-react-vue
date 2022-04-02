@@ -20,7 +20,7 @@ namespace IDP
 {
     [SecurityHeaders]
     [AllowAnonymous]
-    public class ExternalController : Controller
+    public class ExternalController : Microsoft.AspNetCore.Mvc.Controller
     {
         private readonly TestUserStore _users;
         private readonly IIdentityServerInteractionService _interaction;
