@@ -14,7 +14,7 @@ namespace IDP
 {
     [SecurityHeaders]
     [AllowAnonymous]
-    public class HomeController : Microsoft.AspNetCore.Mvc.Controller
+    public class HomeController : Controller
     {
         private readonly IIdentityServerInteractionService _interaction;
         private readonly IWebHostEnvironment _environment;

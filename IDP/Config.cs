@@ -17,10 +17,10 @@ namespace IDP
                 new IdentityResources.Profile()
             };
 
-        public static IEnumerable<ApiResource> Apis =>
-            new ApiResource[]
+        public static IEnumerable<ApiScope> ApiScopes =>
+            new ApiScope[]
             {
-                new ApiResource("movieApi", "Movie API")
+                new ApiScope("movieApi", "Movie API")
             };
 
         public static IEnumerable<Client> Clients =>

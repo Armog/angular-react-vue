@@ -7,9 +7,9 @@ using Microsoft.AspNetCore.Mvc.Filters;
 
 namespace IDP
 {
-    public class SecurityHeadersAttribute : Microsoft.AspNetCore.Mvc.Filters.ActionFilterAttribute
+    public class SecurityHeadersAttribute : ActionFilterAttribute
     {
-        public override void OnResultExecuting(Microsoft.AspNetCore.Mvc.Filters.ResultExecutingContext context)
+        public override void OnResultExecuting(ResultExecutingContext context)
         {
             var result = context.Result;
             if (result is ViewResult)

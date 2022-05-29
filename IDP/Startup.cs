@@ -28,7 +28,7 @@ namespace IDP
 
             var builder = services.AddIdentityServer()
                 .AddInMemoryIdentityResources(Config.Ids)
-                .AddInMemoryApiResources(Config.Apis)
+                .AddInMemoryApiScopes(Config.ApiScopes)
                 .AddInMemoryClients(Config.Clients)
                 //.AddInMemoryClients(Configuration.GetSection("IdentityServer:Clients"))
                 .AddTestUsers(TestUsers.Users);
